@@ -1,119 +1,52 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+![Logo of the project](https://c3.staticflickr.com/3/2804/4328074809_0612af691b_o.jpg)
 
 # Name of the project
-> Additional information or tagline
 
-A brief description of your project, what it is used for and how does life get
-awesome when someone starts to use it.
+The VolunTellMe app allows visitors to see the volunteer work happening around them, and be inspired. By providing a way to view the many, many places where fellow citizens are working in service, this app is aimed at increasing the drive of everyone to make this a better place to live.
+
+A user can search, filter, and sort the table ("Opportunities") to see nearby (or interesting) organizations that have received grant funding from the government.
+
+On the "Map" tab, the user can see a visual representation of locations where the service takes place.
+
+Information
+
+Twitter
+
+This is the front-end, consuming a Rails API which serves up a static CSV of the location of sites where AmeriCorps members and Senior Corps volunteers served between 2/10/2016 and 2/10/2017. See the wonderful [report](https://data.nationalservice.gov/Grants-and-Grantees/CNCS-State-Profiles-2016-2017-National-Map-of-Prog/wy3d-x64g) for much more information and context.
+
+Feel free to take a look at the source of the API [here](https://github.com/jk1dd/voluntellme_api), and for the best experience, check out the [live application](www.google.com).
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
-
-```shell
-packagemanager install awesome-project
-awesome-project start
-awesome-project "Do something!"  # prints "Nah."
 ```
-
-Here you should say what actually happens when you execute the code above.
-
-## Developing
-
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
-
-```shell
-git clone https://github.com/your/awesome-project.git
-cd awesome-project/
-packagemanager install
+git clone https://github.com/jk1dd/voluntellme.git
+cd voluntellme
+npm install
+npm start
 ```
-
-And state what happens step-by-step.
-
-### Building
-
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here:
-
-```shell
-./configure
-make
-make install
-```
-
-Here again you should state what actually happens when the code above gets
-executed.
-
-### Deploying / Publishing
-
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
-```shell
-packagemanager deploy awesome-project -s server.com -u username -p password
-```
-
-And again you'd need to tell what the previous code actually does.
+Navigate to `localhost:3000` and you should see the magic.
 
 ## Features
 
-What's all the bells and whistles this project can perform?
-* What's the main functionality
-* You can also do another thing
-* If you get really randy, you can even do this
-
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when
-using the project.
-
-#### Argument 1
-Type: `String`  
-Default: `'default value'`
-
-State what an argument does and how you can use it. If needed, you can provide
-an example below.
-
-Example:
-```bash
-awesome-project "Some other value"  # Prints "You're nailing this readme!"
-```
-
-#### Argument 2
-Type: `Number|Boolean`  
-Default: 100
-
-Copy-paste as many of these as you need.
+What does this app do, you ask?
+* Get info!
+* See a table and interact with it!
+* See a map and interact with it!
+* See relevant Tweets! (Maybe)
+* The more you know!
 
 ## Contributing
 
-When you publish something open source, one of the greatest motivations is that
-anyone can just jump in and start contributing to your project.
-
-These paragraphs are meant to welcome those kind souls to feel that they are
-needed. You should state something like:
-
-"If you'd like to contribute, please fork the repository and use a feature
-branch. Pull requests are warmly welcome."
-
-If there's anything else the developer needs to know (e.g. the code style
-guide), you should link it here. If there's a lot of things to take into
-consideration, it is common to separate this section to its own file called
-`CONTRIBUTING.md` (or similar). If so, you should say that it exists here.
+If you'd like to contribute, please fork the repository and use a feature
+branch. Pull requests are warmly welcome.
 
 ## Licensing
 
-One really important part: Give your project a proper license. Here you should
-state what the license is and how to find the text version of the license.
-Something like:
-
-"The code in this project is licensed under MIT license."
+The code in this project is licensed under MIT license.
 
 
-
-<!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+<!--
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
