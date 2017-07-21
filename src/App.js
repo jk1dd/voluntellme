@@ -1,21 +1,80 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-class App extends Component {
-  render() {
+class OrgRow extends React.Component {
+  render () {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <tr>
+        <td>{this.props.org.name}</td>
+        <td>{this.props.org.city}</td>
+        <td>{this.props.org.county}</td>
+        <td>{this.props.org.state}</td>
+        <td>{this.props.org.zip}</td>
+      </tr>
+    );
+  }
+}
+
+class OrgTable extends React.Component {
+  render () {
+    const rows = [];
+    this.props.orgs.forEach(function(org) {
+      rows.push(<OrgRow org={org} key={org.name}/> );
+    });
+    return(
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>County</th>
+            <th>State</th>
+            <th>ZIP</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </table>
+    );
+  }
+}
+
+class SearchBar extends React.Component {
+  render () {
+    return (
+      <form>
+        <input type="text" placeholder="Something Cool"/>
+      </form>
+    );
+  }
+}
+
+class TableInfoText extends React.Component {
+  render () {
+    return (
+      <h2>Look at all these organizations!</h2>
+    );
+  }
+}
+
+class WholeApp extends React.Component {
+  render () {
+    return (
+      <div>
+        <TableInfoText />
+        <SearchBar />
+        <OrgTable orgs={this.props.orgs} />
       </div>
     );
   }
 }
 
-export default App;
+export const organizations = [
+  {name: 'Test Org', city: 'CSprings', county: 'Cheyenne', state: 'CO', zip: '80906'},
+  {name: 'Phone', city: 'Raleigh', county: 'Wade', state: 'NC', zip: '27681'}
+]
+
+// ReactDOM.render(
+//   <WholeApp orgs={ORGANZIATIONS} />,
+//   document.getElementById('root')
+// );
+
+export default WholeApp;
