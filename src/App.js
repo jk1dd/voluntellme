@@ -19,7 +19,7 @@ class OrgTable extends Component {
     const rows = [];
 
     this.props.orgs.forEach((org) => {
-      if (org.name.indexOf(this.props.filterText) === -1) {
+      if ((org.name + org.city + org.county + org.state + org.zip).toLowerCase().indexOf(this.props.filterText) === -1) { // how to filter by any column?
         return;
       }
       rows.push(<OrgRow org={org} key={org.name}/> );
