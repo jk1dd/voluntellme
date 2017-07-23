@@ -6,7 +6,6 @@ import WholeApp from './App';
 import {organizations} from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
   <WholeApp orgs={organizations} />,
   document.getElementById('root')

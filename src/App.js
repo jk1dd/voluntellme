@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 
 class OrgRow extends Component {
   render () {
@@ -19,14 +20,12 @@ class OrgTable extends Component {
     const rows = [];
 
     this.props.orgs.forEach((org) => {
-      if ((org.name + org.city + org.county + org.state + org.zip).toLowerCase().indexOf(this.props.filterText) === -1) { // how to filter by any column?
+      // debugger
+      if ((org.name + org.city + org.county + org.state + org.zip).toLowerCase().indexOf(this.props.filterText) === -1) {
         return;
       }
-      rows.push(<OrgRow org={org} key={org.name}/> );
+      rows.push(<OrgRow org={org} key={org.id}/> );
     });
-    // this.props.orgs.forEach(function(org) {
-    //   rows.push(<OrgRow org={org} key={org.name}/> );
-    // });
 
     return(
       <table>
@@ -73,8 +72,10 @@ class TableInfoText extends Component {
 class WholeApp extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      filterText: ''
+      filterText: '',
+      organizations: []
     };
     this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
   }
@@ -84,6 +85,13 @@ class WholeApp extends Component {
       filterText: filterText
     });
   }
+
+  componentDidMount() {
+    axios.get('http://localhost:3000/api/v1/organizations').then((result) => {
+      this.setState({ organizations: result.data });
+    });
+  }
+
   render () {
     return (
       <div>
@@ -93,7 +101,8 @@ class WholeApp extends Component {
           onFilterTextInput={this.handleFilterTextInput}
         />
         <OrgTable
-          orgs={this.props.orgs}
+          // orgs={this.props.orgs}
+          orgs={this.state.organizations}
           filterText={this.state.filterText}/>
       </div>
     );
