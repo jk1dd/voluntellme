@@ -1,24 +1,27 @@
-.App {
-  text-align: center;
+#org-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#org-table td, #org-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#org-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#org-table tr:hover {background-color: #ddd;}
+
+#org-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #19858e;
+    color: white;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+input {
+  height: 30px;
+  width: 500px;
 }

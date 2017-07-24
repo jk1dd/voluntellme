@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import './App.css'
 
 class OrgRow extends Component {
   render () {
@@ -20,7 +21,6 @@ class OrgTable extends Component {
     const rows = [];
 
     this.props.orgs.forEach((org) => {
-      // debugger
       if ((org.name + org.city + org.county + org.state + org.zip).toLowerCase().indexOf(this.props.filterText) === -1) {
         return;
       }
@@ -28,7 +28,7 @@ class OrgTable extends Component {
     });
 
     return(
-      <table>
+      <table id="org-table">
         <thead>
           <tr>
             <th>Name</th>
@@ -55,7 +55,8 @@ class SearchBar extends Component {
   render () {
     return (
       <form>
-      <input type="text" placeholder="Search..." value={this.props.filterText} onChange={this.handleFilterTextInputChange}/>
+        <div>Search for stuff here. </div>
+        <input type="text" placeholder="Search..." value={this.props.filterText} onChange={this.handleFilterTextInputChange}/>
       </form>
     );
   }
@@ -101,22 +102,11 @@ class WholeApp extends Component {
           onFilterTextInput={this.handleFilterTextInput}
         />
         <OrgTable
-          // orgs={this.props.orgs}
           orgs={this.state.organizations}
           filterText={this.state.filterText}/>
       </div>
     );
   }
 }
-
-export const organizations = [
-  {name: 'Test Org', city: 'CSprings', county: 'Cheyenne', state: 'CO', zip: '80906'},
-  {name: 'Phone', city: 'Raleigh', county: 'Wade', state: 'NC', zip: '27681'}
-]
-
-// ReactDOM.render(
-//   <WholeApp orgs={ORGANZIATIONS} />,
-//   document.getElementById('root')
-// );
 
 export default WholeApp;
