@@ -6,15 +6,13 @@ The VolunTellMe app allows visitors to see the volunteer work happening around t
 
 A user can search, filter, and sort the table ("Opportunities") to see nearby (or interesting) organizations that have received grant funding from the government.
 
-On the "Map" tab, the user can see a visual representation of locations where the service takes place.
+(PENDING) On the "Map" tab, the user can see a visual representation of locations where the service takes place.
 
-Information
-
-Twitter
+(PENDING) On the "Information" tab, users can see resources to get invovled.
 
 This is the front-end, consuming a Rails API which serves up a static CSV of the location of sites where AmeriCorps members and Senior Corps volunteers served between 2/10/2016 and 2/10/2017. See the wonderful [report](https://data.nationalservice.gov/Grants-and-Grantees/CNCS-State-Profiles-2016-2017-National-Map-of-Prog/wy3d-x64g) for much more information and context.
 
-Feel free to take a look at the source of the API [here](https://github.com/jk1dd/voluntellme_api), and for the best experience, check out the [live application](www.google.com).
+Feel free to take a look at the source of the API [here](https://github.com/jk1dd/voluntellme_api), or check out the [live application](www.google.com), which serves up JSON.
 
 ## Installing / Getting started
 
@@ -32,7 +30,6 @@ What does this app do, you ask?
 * Get info!
 * See a table and interact with it!
 * See a map and interact with it!
-* See relevant Tweets! (Maybe)
 * The more you know!
 
 ## Contributing
