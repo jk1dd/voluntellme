@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import Info from './info.jsx'
-import Map from './map.jsx'
+import Info from './info/info.jsx'
+import Map from './map/map.jsx'
 import Explore from './explore/explore.jsx'
 
-class Navigation extends Component {
+class App extends Component {
   render () {
     return (
       <Router>
@@ -28,4 +28,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation;
+export default App;
