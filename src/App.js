@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import './App.css'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 class OrgRow extends Component {
   render () {
@@ -70,7 +75,7 @@ class TableInfoText extends Component {
   }
 }
 
-class WholeApp extends Component {
+class Explore extends Component {
   constructor(props) {
     super(props);
 
@@ -109,4 +114,40 @@ class WholeApp extends Component {
   }
 }
 
-export default WholeApp;
+const Info = () => (
+  <div className='volunteer-info'>
+    <p>Info to go here</p>
+  </div>
+)
+
+const Map = () => (
+  <div>
+    <p>Map to go here</p>
+  </div>
+)
+
+class Navigation extends Component {
+  render () {
+    return (
+      <Router>
+        <div>
+          <ul>
+            <li><Link to='/'>Info</Link></li>
+            <li><Link to='/table'>Explore</Link></li>
+            <li><Link to='/map'>Map</Link></li>
+          </ul>
+
+          <hr/>
+
+          <Route exact path='/' component={Info} />
+          <Route path='/table' component={Explore} />
+          <Route path='/map' component={Map} />
+
+        </div>
+      </Router>
+    )
+  }
+}
+
+export default Navigation;
+// export default Explore;
