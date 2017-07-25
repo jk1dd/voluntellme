@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <ul>
+          <ul id="navigation-bar">
             <li><Link to='/'>Info</Link></li>
             <li><Link to='/table'>Explore</Link></li>
             <li><Link to='/map'>Map</Link></li>

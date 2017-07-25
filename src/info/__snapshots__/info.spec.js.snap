@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Info /> renders the proper things 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="volunteer-info"
+>
+    <h1>
+        Wondering how to get started?
+    </h1>
+    <div
+        className="who-info"
+    >
+        <h2>
+            Who volunteers?
+        </h2>
+        <p>
+            People all over the country volutneer. You should too.
+        </p>
+    </div>
+    <div
+        className="what-info"
+    >
+        <h2>
+            What sorts of things can you do?
+        </h2>
+        <ul>
+            <li>
+                Pets
+            </li>
+            <li>
+                Homeless
+            </li>
+            <li>
+                Elderly
+            </li>
+            <li>
+                Social Issues
+            </li>
+        </ul>
+    </div>
+    <div
+        className="why-info"
+    >
+        <h2>
+            What are some reasons to volunteer?
+        </h2>
+        <p>
+            It is good for you and the country
+        </p>
+    </div>
+    <div
+        className="when-info"
+    >
+        <h2>
+            When should you do it?
+        </h2>
+        <p>
+            Anytime is a good time
+        </p>
+    </div>
+    <div
+        className="how-info"
+    >
+        <h2>
+            Want more info?
+        </h2>
+        <a
+            href="https://www.nationalservice.gov/resources/recruitment/volunteering-america-resources"
+        >
+            Lots of resources here
+        </a>
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="volunteer-info"
+>
+      <h1>
+            Wondering how to get started?
+      </h1>
+      <div
+            className="who-info"
+      >
+            <h2>
+                  Who volunteers?
+            </h2>
+            <p>
+                  People all over the country volutneer. You should too.
+            </p>
+      </div>
+      <div
+            className="what-info"
+      >
+            <h2>
+                  What sorts of things can you do?
+            </h2>
+            <ul>
+                  <li>
+                        Pets
+                  </li>
+                  <li>
+                        Homeless
+                  </li>
+                  <li>
+                        Elderly
+                  </li>
+                  <li>
+                        Social Issues
+                  </li>
+            </ul>
+      </div>
+      <div
+            className="why-info"
+      >
+            <h2>
+                  What are some reasons to volunteer?
+            </h2>
+            <p>
+                  It is good for you and the country
+            </p>
+      </div>
+      <div
+            className="when-info"
+      >
+            <h2>
+                  When should you do it?
+            </h2>
+            <p>
+                  Anytime is a good time
+            </p>
+      </div>
+      <div
+            className="how-info"
+      >
+            <h2>
+                  Want more info?
+            </h2>
+            <a
+                  href="https://www.nationalservice.gov/resources/recruitment/volunteering-america-resources"
+            >
+                  Lots of resources here
+            </a>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Info />,
+      "_debugID": 5,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="volunteer-info"
+>
+          <h1>
+                    Wondering how to get started?
+          </h1>
+          <div
+                    className="who-info"
+          >
+                    <h2>
+                              Who volunteers?
+                    </h2>
+                    <p>
+                              People all over the country volutneer. You should too.
+                    </p>
+          </div>
+          <div
+                    className="what-info"
+          >
+                    <h2>
+                              What sorts of things can you do?
+                    </h2>
+                    <ul>
+                              <li>
+                                        Pets
+                              </li>
+                              <li>
+                                        Homeless
+                              </li>
+                              <li>
+                                        Elderly
+                              </li>
+                              <li>
+                                        Social Issues
+                              </li>
+                    </ul>
+          </div>
+          <div
+                    className="why-info"
+          >
+                    <h2>
+                              What are some reasons to volunteer?
+                    </h2>
+                    <p>
+                              It is good for you and the country
+                    </p>
+          </div>
+          <div
+                    className="when-info"
+          >
+                    <h2>
+                              When should you do it?
+                    </h2>
+                    <p>
+                              Anytime is a good time
+                    </p>
+          </div>
+          <div
+                    className="how-info"
+          >
+                    <h2>
+                              Want more info?
+                    </h2>
+                    <a
+                              href="https://www.nationalservice.gov/resources/recruitment/volunteering-america-resources"
+                    >
+                              Lots of resources here
+                    </a>
+          </div>
+</div>,
+        "_debugID": 6,
+        "_renderedOutput": <div
+          className="volunteer-info"
+>
+          <h1>
+                    Wondering how to get started?
+          </h1>
+          <div
+                    className="who-info"
+          >
+                    <h2>
+                              Who volunteers?
+                    </h2>
+                    <p>
+                              People all over the country volutneer. You should too.
+                    </p>
+          </div>
+          <div
+                    className="what-info"
+          >
+                    <h2>
+                              What sorts of things can you do?
+                    </h2>
+                    <ul>
+                              <li>
+                                        Pets
+                              </li>
+                              <li>
+                                        Homeless
+                              </li>
+                              <li>
+                                        Elderly
+                              </li>
+                              <li>
+                                        Social Issues
+                              </li>
+                    </ul>
+          </div>
+          <div
+                    className="why-info"
+          >
+                    <h2>
+                              What are some reasons to volunteer?
+                    </h2>
+                    <p>
+                              It is good for you and the country
+                    </p>
+          </div>
+          <div
+                    className="when-info"
+          >
+                    <h2>
+                              When should you do it?
+                    </h2>
+                    <p>
+                              Anytime is a good time
+                    </p>
+          </div>
+          <div
+                    className="how-info"
+          >
+                    <h2>
+                              Want more info?
+                    </h2>
+                    <a
+                              href="https://www.nationalservice.gov/resources/recruitment/volunteering-america-resources"
+                    >
+                              Lots of resources here
+                    </a>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Info />,
+}
+`;

@@ -1,6 +1,6 @@
 /* navbar styling */
 
-ul {
+ul#navigation-bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -23,6 +23,14 @@ li a {
 /* Change the navbar link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
+}
+
+.what-info ul {
+  background-color: white;
+}
+
+.what-info li {
+  float:none;
 }
 
 /* table styling */

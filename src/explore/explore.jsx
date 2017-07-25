@@ -29,7 +29,7 @@ class Explore extends Component {
   render () {
     return (
       <div>
-        <h2>Look at all these organizations!</h2>
+        <h1>Look at all these organizations!</h1>
         <SearchBar
           filterText={this.state.filterText}
           onFilterTextInput={this.handleFilterTextInput}
