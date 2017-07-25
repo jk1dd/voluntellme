@@ -67,13 +67,9 @@ class SearchBar extends Component {
   }
 }
 
-class TableInfoText extends Component {
-  render () {
-    return (
-      <h2>Look at all these organizations!</h2>
-    );
-  }
-}
+const TableInfoText = () => (
+  <h2>Look at all these organizations!</h2>
+)
 
 class Explore extends Component {
   constructor(props) {
