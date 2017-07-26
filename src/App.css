@@ -1,3 +1,20 @@
+/* body styles */
+
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+div.off-the-wall {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* navbar styling */
 
 ul#navigation-bar {
@@ -61,4 +78,22 @@ li a:hover {
 input {
   height: 30px;
   width: 500px;
+}
+
+/* style tab headers */
+.tab-header {
+  background: #2d2d2d;
+  filter: none;
+  color: #e9e9e9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+div.tab-header {
+  background-image: url(volunteer.png);
 }

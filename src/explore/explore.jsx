@@ -29,14 +29,19 @@ class Explore extends Component {
   render () {
     return (
       <div>
-        <h1>Look at all these organizations!</h1>
-        <SearchBar
-          filterText={this.state.filterText}
-          onFilterTextInput={this.handleFilterTextInput}
-        />
-        <OrgTable
-          orgs={this.state.organizations}
-          filterText={this.state.filterText}/>
+        <div className='tab-header' id='explore-block'>
+          <h1>Organization Search</h1>
+          <p>Look for some organizations, get ideas for places to volunteer</p>
+        </div>
+        <div className='off-the-wall'>
+          <SearchBar
+            filterText={this.state.filterText}
+            onFilterTextInput={this.handleFilterTextInput}
+            />
+          <OrgTable
+            orgs={this.state.organizations}
+            filterText={this.state.filterText}/>
+        </div>
       </div>
     );
   }

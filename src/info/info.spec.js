@@ -10,7 +10,7 @@ describe('<Info />', () => {
 
   it('renders things at all', () => {
     const info = shallow(<Info />)
-    expect(info.contains(<h1>Wondering how to get started?</h1>)).toEqual(true)
+    expect(info.contains(<h1>Information</h1>)).toEqual(true)
   })
 
   it('renders the proper things', () => {
@@ -20,7 +20,7 @@ describe('<Info />', () => {
 
   it('has a div with class volunteer-info', () => {
     const info = shallow(<Info />)
-    expect(info.find('div').length).toEqual(6)
+    expect(info.find('div').length).toEqual(8)
   })
 
   it('has the right content', () => {

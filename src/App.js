@@ -16,8 +16,6 @@ class App extends Component {
             <li><Link to='/map'>Map</Link></li>
           </ul>
 
-          <hr/>
-
           <Route exact path='/' component={Info} />
           <Route path='/table' component={Explore} />
           <Route path='/map' component={Map} />

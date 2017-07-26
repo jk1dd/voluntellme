@@ -9,31 +9,55 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div>
-    <h1>
-        Look at all these organizations!
-    </h1>
-    <SearchBar
-        filterText=""
-        onFilterTextInput={[Function]}
-    />
-    <OrgTable
-        filterText=""
-        orgs={Array []}
-    />
+    <div
+        className="tab-header"
+        id="explore-block"
+    >
+        <h1>
+            Organization Search
+        </h1>
+        <p>
+            Look for some organizations, get ideas for places to volunteer
+        </p>
+    </div>
+    <div
+        className="off-the-wall"
+    >
+        <SearchBar
+            filterText=""
+            onFilterTextInput={[Function]}
+        />
+        <OrgTable
+            filterText=""
+            orgs={Array []}
+        />
+    </div>
 </div>,
   "nodes": Array [
     <div>
-      <h1>
-            Look at all these organizations!
-      </h1>
-      <SearchBar
-            filterText=""
-            onFilterTextInput={[Function]}
-      />
-      <OrgTable
-            filterText=""
-            orgs={Array []}
-      />
+      <div
+            className="tab-header"
+            id="explore-block"
+      >
+            <h1>
+                  Organization Search
+            </h1>
+            <p>
+                  Look for some organizations, get ideas for places to volunteer
+            </p>
+      </div>
+      <div
+            className="off-the-wall"
+      >
+            <SearchBar
+                  filterText=""
+                  onFilterTextInput={[Function]}
+            />
+            <OrgTable
+                  filterText=""
+                  orgs={Array []}
+            />
+      </div>
 </div>,
   ],
   "options": Object {},
@@ -75,31 +99,55 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div>
-          <h1>
-                    Look at all these organizations!
-          </h1>
-          <SearchBar
-                    filterText=""
-                    onFilterTextInput={[Function]}
-          />
-          <OrgTable
-                    filterText=""
-                    orgs={Array []}
-          />
+          <div
+                    className="tab-header"
+                    id="explore-block"
+          >
+                    <h1>
+                              Organization Search
+                    </h1>
+                    <p>
+                              Look for some organizations, get ideas for places to volunteer
+                    </p>
+          </div>
+          <div
+                    className="off-the-wall"
+          >
+                    <SearchBar
+                              filterText=""
+                              onFilterTextInput={[Function]}
+                    />
+                    <OrgTable
+                              filterText=""
+                              orgs={Array []}
+                    />
+          </div>
 </div>,
         "_debugID": 6,
         "_renderedOutput": <div>
-          <h1>
-                    Look at all these organizations!
-          </h1>
-          <SearchBar
-                    filterText=""
-                    onFilterTextInput={[Function]}
-          />
-          <OrgTable
-                    filterText=""
-                    orgs={Array []}
-          />
+          <div
+                    className="tab-header"
+                    id="explore-block"
+          >
+                    <h1>
+                              Organization Search
+                    </h1>
+                    <p>
+                              Look for some organizations, get ideas for places to volunteer
+                    </p>
+          </div>
+          <div
+                    className="off-the-wall"
+          >
+                    <SearchBar
+                              filterText=""
+                              onFilterTextInput={[Function]}
+                    />
+                    <OrgTable
+                              filterText=""
+                              orgs={Array []}
+                    />
+          </div>
 </div>,
       },
       "_renderedNodeType": 0,
