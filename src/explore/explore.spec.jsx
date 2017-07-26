@@ -30,5 +30,4 @@ describe('<Explore />', () => {
     expect(explore.find(OrgTable).length).toEqual(1)
   })
 
-
 })
