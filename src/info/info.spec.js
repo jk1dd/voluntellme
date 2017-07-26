@@ -26,10 +26,14 @@ describe('<Info />', () => {
   it('has the right content', () => {
     const info = shallow(<Info />)
     expect(info.equals(<div className='volunteer-info'>
-      <h1>Wondering how to get started?</h1>
+      <div className='tab-header' id='info-block'>
+        <h1>Information</h1>
+        <p>Find some thoughts and resources here</p>
+      </div>
+      <div className='off-the-wall'>
         <div className='who-info'>
           <h2>Who volunteers?</h2>
-          <p>People all over the country volutneer. You should too.</p>
+          <p>People all over the country volunteer. You should too.</p>
         </div>
         <div className='what-info'>
           <h2>What sorts of things can you do?</h2>
@@ -42,16 +46,17 @@ describe('<Info />', () => {
         </div>
         <div className='why-info'>
           <h2>What are some reasons to volunteer?</h2>
-          <p>It is good for you and the country</p>
+          <p>It is good for everyone.</p>
         </div>
         <div className='when-info'>
           <h2>When should you do it?</h2>
-          <p>Anytime is a good time</p>
+          <p>Anytime is a good time.</p>
         </div>
         <div className='how-info'>
           <h2>Want more info?</h2>
           <a href="https://www.nationalservice.gov/resources/recruitment/volunteering-america-resources">Lots of resources here</a>
         </div>
-      </div>)).toBeTruthy
+      </div>
+    </div>)).toBeTruthy
   })
 })
