@@ -1,20 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Info from './info/info.jsx'
+import Map from './map/map.jsx'
+import Explore from './explore/explore.jsx'
+
+const MyMap = (props) =>{
+  return (
+    <Map
+      zoom = {10}
+      center = {{lat:39.7379591, lng:-104.9864946}}
+      containerElement = {<div style={{ height: `100px` }} />}
+      mapElement = { <div style={{ height: `1000px` }} /> }
+      />
+  )
+}
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <Router>
+        <div>
+          <ul id="navigation-bar">
+            <li><Link to='/'>Info</Link></li>
+            <li><Link to='/table'>Explore</Link></li>
+            <li><Link to='/map'>Map</Link></li>
+          </ul>
+
+          <Route exact path='/' component={Info} />
+          <Route path='/table' component={Explore} />
+          <Route path='/map' component={MyMap} />
+
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      </Router>
+    )
   }
 }
 

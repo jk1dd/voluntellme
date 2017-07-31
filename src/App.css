@@ -1,24 +1,99 @@
-.App {
-  text-align: center;
+/* body styles */
+
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+div.off-the-wall {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+/* navbar styling */
+
+ul#navigation-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-intro {
-  font-size: large;
+/* Change the navbar link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.what-info ul {
+  background-color: white;
+}
+
+.what-info li {
+  float:none;
+}
+
+/* table styling */
+
+#org-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#org-table td, #org-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#org-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#org-table tr:hover {background-color: #ddd;}
+
+#org-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #19858e;
+    color: white;
+}
+
+input {
+  height: 30px;
+  width: 500px;
+}
+
+/* style tab headers */
+.tab-header {
+  background: #2d2d2d;
+  filter: none;
+  color: #e9e9e9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+div.tab-header {
+  background-image: url(volunteer.png);
 }
