@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import React, { Component } from 'react';
 import { withGoogleMap, GoogleMap, Marker, InfoWindow } from 'react-google-maps'
 import axios from 'axios'
