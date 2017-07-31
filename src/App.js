@@ -5,6 +5,17 @@ import Info from './info/info.jsx'
 import Map from './map/map.jsx'
 import Explore from './explore/explore.jsx'
 
+const MyMap = (props) =>{
+  return (
+    <Map
+      zoom = {10}
+      center = {{lat:39.7379591, lng:-104.9864946}}
+      containerElement = {<div style={{ height: `100px` }} />}
+      mapElement = { <div style={{ height: `1000px` }} /> }
+      />
+  )
+}
+
 class App extends Component {
   render () {
     return (
@@ -18,7 +29,7 @@ class App extends Component {
 
           <Route exact path='/' component={Info} />
           <Route path='/table' component={Explore} />
-          <Route path='/map' component={Map} />
+          <Route path='/map' component={MyMap} />
 
         </div>
       </Router>
