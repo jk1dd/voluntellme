@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import React, { Component } from 'react';
 import { withGoogleMap, GoogleMap, Marker, InfoWindow } from 'react-google-maps'
 import axios from 'axios'
@@ -66,7 +67,8 @@ class Map extends Component {
 
              {org.showInfo && (
               <InfoWindow onCloseClick={() => this.handleMarkerClose(org)}>
-                <div>{org.name}</div>
+                <a href={`https://www.google.com/search?site=&source=hp&q=${org.name}`} target="_blank">{org.name}</a>
+
               </InfoWindow>
             )}
 
