@@ -8,8 +8,8 @@ import Explore from './explore/explore.jsx'
 const MyMap = (props) =>{
   return (
     <Map
-      zoom = {14}
-      center = {{lat:39.7527374, lng:-104.9914602}}
+      zoom = {10}
+      center = {{lat:39.7379591, lng:-104.9864946}}
       containerElement = {<div style={{ height: `100px` }} />}
       mapElement = { <div style={{ height: `1000px` }} /> }
       />

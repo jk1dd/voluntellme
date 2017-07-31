@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
+import { withGoogleMap, GoogleMap, Marker, InfoWindow } from 'react-google-maps'
+import axios from 'axios'
+const google = window.google;
 
 // const Map = () => (
 //   <div className='map-things'>
@@ -18,32 +20,49 @@ class Map extends Component {
   constructor(){
     super()
     this.state = {
-      map: null
+      map: null,
+      organizations: []
     }
   }
 
-  mapMoved () {
-    console.log('Map moved')
+  // componentDidMount() {
+  //   axios.get('http://localhost:3000/api/v1/organizations').then((result) => {
+  //     this.setState({ markers: result.data.map(org => {
+  //       return {lat: org.loc.replace(/[()]/g, '').split(',')[0], lng: org.loc.replace(/[()]/g, '').split(',')[1]}
+  //       })
+  //     });
+  //   })
+  // }
+
+  componentDidMount() {
+    axios.get('http://localhost:3000/api/v1/organizations').then((result) => {
+      this.setState({ organizations: result.data });
+    });
   }
 
-  mapLoaded(map) {
-    // console.log('mapLoaded:' + JSON.stringify(map.getCenter()))
-    if (this.state != null)
-    return this.setState({
-      map: map
-    })
-  }
+  // mapMoved () {
+  //   console.log('Map moved')
+  // }
+  //
+  // mapLoaded(map) {
+  //   // console.log('mapLoaded:' + JSON.stringify(map.getCenter()))
+  //   // debugger
+  //   if (this.state != null)
+  //   return this.setState({
+  //     map: map
+  //   })
+  // }
+
   render () {
-    const markers = this.props.markers || []
 
     return (
       <GoogleMap
-        ref={this.mapLoaded.bind(this)}
-        onDragEnd={this.mapMoved.bind(this)}
         defaultZoom={this.props.zoom}
         defaultCenter={this.props.center} >
-        {markers.map((marker, index) => (
-          <Marker {...marker} />
+        {this.state.organizations.map(org => (
+          <Marker
+            position={new google.maps.LatLng(org.loc.replace(/[()]/g, '').split(',')[0], org.loc.replace(/[()]/g, '').split(',')[1].substring(1))}
+            key={org.id} />
         )
       )}
       </GoogleMap>
