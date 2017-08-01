@@ -15,21 +15,10 @@ div.off-the-wall {
   padding-right: 15px;
 }
 
-/* title styling */
+/* title and logo styling */
 
-#title {
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-#logo {
-  float: left;
-  overflow: auto;
-  padding-left: 10px;
-}
-
-#logo img {
-  padding-right: 10px;
+.header h1 {
+  margin: 0px;
 }
 
 /* navbar styling */
@@ -61,18 +50,26 @@ li a {
 
 /* info styling */
 .off-the-wall div {
-  border-style: solid;
+  /*border-style: solid;*/
   width: 75%;
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.off-the-wall p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.off-the-wall h2 {
+  margin-top: 20px;
+}
+
 
 .what-info ul {
-  background-color: white;
-  text-align: center;
+  padding-left: 0px;
 }
 
 .what-info li {

@@ -14,12 +14,12 @@ const Info = () => (
       <div className='what-info'>
         <h2>What sorts of things can you do?</h2>
         <ul>
-          <li><a href='https://duckduckgo.com/?q=volunteering+for+pets&t=hu&ia=web'>Pets</a></li>
-          <li><a href='https://duckduckgo.com/?q=volunteering+for+homeless&t=hu&ia=web'>Homeless</a></li>
-          <li><a href='https://duckduckgo.com/?q=volunteering+for+elderly&t=hu&ia=web'>Elderly</a></li>
-          <li><a href='https://duckduckgo.com/?q=volunteering+for+social+issues&t=hu&ia=web'>Social Issues</a></li>
-          <li><a href='https://duckduckgo.com/?q=volunteering+for+education&t=hu&ia=web'>Education</a></li>
-          <li><a href='https://duckduckgo.com/?q=volunteering+for+health&t=hu&ia=web'>Health</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+pets&t=hu&ia=web' target='_blank'>Pets</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+homeless&t=hu&ia=web' target='_blank'>Homeless</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+elderly&t=hu&ia=web' target='_blank'>Elderly</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+social+issues&t=hu&ia=web' target='_blank'>Social Issues</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+education&t=hu&ia=web' target='_blank'>Education</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+health&t=hu&ia=web' target='_blank'>Health</a></li>
         </ul>
       </div>
       <div className='why-info'>
@@ -32,7 +32,7 @@ const Info = () => (
       </div>
       <div className='how-info'>
         <h2>Want more info?</h2>
-        <a href="https://www.nationalservice.gov/resources/recruitment/volunteering-america-resources">Check out some of the resources and information listed at this site!</a>
+        <p><a href="https://www.nationalservice.gov/resources/recruitment/volunteering-america-resources">Check out some of the resources and information listed at this site!</a></p>
       </div>
     </div>
   </div>
