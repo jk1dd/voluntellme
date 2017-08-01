@@ -4,7 +4,7 @@
 
 The VolunTellMe app allows visitors to see the volunteer work happening around them, and be inspired. By providing a way to view and search the many, many places where fellow citizens are working in service, this app is aimed at increasing the drive of everyone to make this country and world a better place to live.
 
-For the best experience, see the [live application on Heroku](https://voluntellme.herokuapp.com/).
+For the best experience, see the [live application on Heroku](https://voluntellme.herokuapp.com/). [Or, see it hosted on Amazon s3](http://voluntellme.s3-website-us-west-1.amazonaws.com/)!
 
 On the "Information" tab (also the root path), users can see resources and information about getting involved.
 
@@ -42,7 +42,7 @@ branch. Pull requests and feedback are warmly welcome.
 ## Additional information
 
 - This project was managed with [Pivotal Tracker](https://www.pivotaltracker.com/).
-- This is my first [React](https://facebook.github.io/react/) project, spun up with [Create React App](https://github.com/facebookincubator/create-react-app), and the first time I have used the [Google Maps API](https://developers.google.com/maps/). I also had the chance to use the [React Router](https://github.com/ReactTraining/react-router) and [React Google Maps](https://github.com/tomchentw/react-google-maps) libraries, and test with [Jest](https://facebook.github.io/jest/) and [Enzyme](https://github.com/airbnb/enzyme).
+- This is my first [React](https://facebook.github.io/react/) project, spun up with [Create React App](https://github.com/facebookincubator/create-react-app), and the first time I have used the [Google Maps API](https://developers.google.com/maps/). I also had the chance to use the [React Router](https://github.com/ReactTraining/react-router) and [React Google Maps](https://github.com/tomchentw/react-google-maps) libraries, and test with [Jest](https://facebook.github.io/jest/) and [Enzyme](https://github.com/airbnb/enzyme). For fun, I also deployed it to [Amazon s3](https://aws.amazon.com/s3/).
 - I have made an attempt to focus on accessibility in structure and design, testing with a screen reader, analyzing with [aXe](https://www.deque.com/products/axe/), and ensuring all relevant elements are included in the tab cycle.
 
 ## Attributions
