@@ -11,7 +11,7 @@ const MyMap = (props) =>{
       zoom = {10}
       center = {{lat:39.7379591, lng:-104.9864946}}
       containerElement = {<div style={{ height: `100px` }} />}
-      mapElement = { <div style={{ height: `1000px` }} /> }
+      mapElement = { <div  id='map' style={{ height: `1000px` }} /> }
       />
   )
 }

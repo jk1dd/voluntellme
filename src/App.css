@@ -132,3 +132,9 @@ input {
 div.tab-header {
   background-image: url(volunteer.png);
 }
+
+/* map styling */
+
+#map {
+  margin: 50px;
+}
