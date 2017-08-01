@@ -53,28 +53,31 @@ class Map extends Component {
   render () {
 
     return (
-      <GoogleMap
-        defaultZoom={this.props.zoom}
-        defaultCenter={this.props.center} >
-        {this.state.organizations.map(org => (
-          <Marker
-            position={new google.maps.LatLng(org.loc.replace(/[()]/g, '').split(',')[0], org.loc.replace(/[()]/g, '').split(',')[1].substring(1))}
-            key={org.id}
-            showInfo={false}
-            onClick={() => this.handleMarkerClick(org)}
-             >
+      <div id='wholething'>
+        <h1 tabIndex='0'>Click on a marker to see more information</h1>
+          <GoogleMap
+            defaultZoom={this.props.zoom}
+            defaultCenter={this.props.center} >
+            {this.state.organizations.map(org => (
+              <Marker
+                position={new google.maps.LatLng(org.loc.replace(/[()]/g, '').split(',')[0], org.loc.replace(/[()]/g, '').split(',')[1].substring(1))}
+                key={org.id}
+                showInfo={false}
+                onClick={() => this.handleMarkerClick(org)}
+                 >
 
-             {org.showInfo && (
-              <InfoWindow onCloseClick={() => this.handleMarkerClose(org)}>
-                <a href={`https://www.google.com/search?site=&source=hp&q=${org.name}`} target="_blank">{org.name}</a>
+                 {org.showInfo && (
+                  <InfoWindow onCloseClick={() => this.handleMarkerClose(org)}>
+                    <a href={`https://www.google.com/search?site=&source=hp&q=${org.name}`} target="_blank">{org.name}</a>
 
-              </InfoWindow>
+                  </InfoWindow>
+                )}
+
+              </Marker>
+              )
             )}
-
-          </Marker>
-          )
-        )}
-      </GoogleMap>
+          </GoogleMap>
+      </div>
     )
   }
 }

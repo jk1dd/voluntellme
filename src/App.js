@@ -11,7 +11,7 @@ const MyMap = (props) =>{
       zoom = {10}
       center = {{lat:39.7379591, lng:-104.9864946}}
       containerElement = {<div style={{ height: `100px` }} />}
-      mapElement = { <div style={{ height: `1000px` }} /> }
+      mapElement = { <div  id='map' style={{ height: `1000px` }} /> }
       />
   )
 }
@@ -21,7 +21,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <h1 id="title">VolunTellMe</h1>
+          <div className='header'>
+            <h1><img src='/solidarity-smaller.png' alt='raised hands logo' width='70px'></img>VolunTellMe</h1>
+          </div>
           <ul id="navigation-bar">
             <li><Link to='/'>Info</Link></li>
             <li><Link to='/table'>Explore</Link></li>
