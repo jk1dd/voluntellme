@@ -2,10 +2,10 @@
 
 body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 div.off-the-wall {
@@ -13,6 +13,13 @@ div.off-the-wall {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* title styling */
+
+#title {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 /* navbar styling */
