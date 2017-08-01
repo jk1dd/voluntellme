@@ -11,7 +11,7 @@ class SearchBar extends Component {
   render () {
     return (
       <form>
-        <div>Enter any search term.</div>
+        <label>Enter any search term.</label>
         <input type="text" placeholder="Search..." value={this.props.filterText} onChange={this.handleFilterTextInputChange}/>
       </form>
     );

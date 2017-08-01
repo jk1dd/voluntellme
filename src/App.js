@@ -21,6 +21,7 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <h1 id="title">VolunTellMe</h1>
           <ul id="navigation-bar">
             <li><Link to='/'>Info</Link></li>
             <li><Link to='/table'>Explore</Link></li>
