@@ -14,7 +14,7 @@ On the "Map" tab, the user can see a visual representation of locations where th
 
 This is the front-end, built in React and consuming a Rails API. The Rails API serves up a static CSV of the location of sites where AmeriCorps members and Senior Corps volunteers served between 2/10/2016 and 2/10/2017. See the wonderful [report](https://data.nationalservice.gov/Grants-and-Grantees/CNCS-State-Profiles-2016-2017-National-Map-of-Prog/wy3d-x64g) for much more information and context.
 
-Feel free to take a look at the source of the API [here](https://github.com/jk1dd/voluntellme_api), or check out the [live API application](www.google.com), which serves up JSON.
+Feel free to take a look at the source of the API [here](https://github.com/jk1dd/voluntellme_api), or check out the [live API application](https://voluntellme-api.herokuapp.com/api/v1/organizations), which serves up JSON.
 
 ## Installing / Getting started
 
