@@ -10,11 +10,18 @@ ShallowWrapper {
   "length": 1,
   "node": <BrowserRouter>
     <div>
-        <h1
-            id="title"
+        <div
+            className="header"
         >
-            VolunTellMe
-        </h1>
+            <h1>
+                <img
+                    alt="raised hands logo"
+                    src="/solidarity-smaller.png"
+                    width="70px"
+                />
+                VolunTellMe
+            </h1>
+        </div>
         <ul
             id="navigation-bar"
         >
@@ -61,11 +68,18 @@ ShallowWrapper {
   "nodes": Array [
     <BrowserRouter>
       <div>
-            <h1
-                  id="title"
+            <div
+                  className="header"
             >
-                  VolunTellMe
-            </h1>
+                  <h1>
+                        <img
+                              alt="raised hands logo"
+                              src="/solidarity-smaller.png"
+                              width="70px"
+                        />
+                        VolunTellMe
+                  </h1>
+            </div>
             <ul
                   id="navigation-bar"
             >
@@ -146,11 +160,18 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <BrowserRouter>
           <div>
-                    <h1
-                              id="title"
+                    <div
+                              className="header"
                     >
-                              VolunTellMe
-                    </h1>
+                              <h1>
+                                        <img
+                                                  alt="raised hands logo"
+                                                  src="/solidarity-smaller.png"
+                                                  width="70px"
+                                        />
+                                        VolunTellMe
+                              </h1>
+                    </div>
                     <ul
                               id="navigation-bar"
                     >
@@ -197,11 +218,18 @@ ShallowWrapper {
         "_debugID": 6,
         "_renderedOutput": <BrowserRouter>
           <div>
-                    <h1
-                              id="title"
+                    <div
+                              className="header"
                     >
-                              VolunTellMe
-                    </h1>
+                              <h1>
+                                        <img
+                                                  alt="raised hands logo"
+                                                  src="/solidarity-smaller.png"
+                                                  width="70px"
+                                        />
+                                        VolunTellMe
+                              </h1>
+                    </div>
                     <ul
                               id="navigation-bar"
                     >
