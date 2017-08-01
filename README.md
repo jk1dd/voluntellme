@@ -1,4 +1,4 @@
-![Logo of the project](/public/solidarity-smaller.png?raw=true "Raised Hands")
+![Logo of the project, raised hands](/public/solidarity-smaller.png?raw=true "Raised Hands")
 
 # VolunTellMe
 
@@ -6,11 +6,17 @@ The VolunTellMe app allows visitors to see the volunteer work happening around t
 
 For the best experience, see the [live application on Heroku](https://voluntellme.herokuapp.com/).
 
-On the "Information" tab, users can see resources and information about getting involved.
+On the "Information" tab (also the root path), users can see resources and information about getting involved.
 
-On the "Opportunities" tab, a user can search, filter, and sort the table to see nearby (or interesting) organizations that have received grant funding from the government.
+![Screenshot of the Information tab](/public/voluntellme-info.png?raw=true "information tab")
 
-On the "Map" tab, the user can see a visual representation of locations where the service takes place. Each InfoWindow contains a link to a Google search using the organization's name.
+On the "Explore" tab, a user can search the table to see nearby (or interesting) organizations that have had government-sponsored volunteers. The table with auto-filter based on the input to the search box.
+
+![Screenshot of the Explore tab](/public/voluntellme-explore.png?raw=true "explore tab")
+
+On the "Map" tab, the user can see a visual representation of locations where the service takes place. A user can click on the marker, revealing an InfoWindow, each of which contains a link to a Google search using the organization's name.
+
+![Screenshot of the Map tab](/public/voluntellme-map.png?raw=true "map tab")
 
 This is the front-end, built in React and consuming a Rails API. The Rails API serves up a static CSV of the location of sites where AmeriCorps members and Senior Corps volunteers served between 2/10/2016 and 2/10/2017. See the wonderful [Corporation for National and Community Service report](https://data.nationalservice.gov/Grants-and-Grantees/CNCS-State-Profiles-2016-2017-National-Map-of-Prog/wy3d-x64g) for much more information and context.
 
@@ -26,7 +32,7 @@ npm start
 ```
 Navigate to `localhost:3000` and you should see the magic.
 
-If you would like to include your own Google Maps API key (to avoid a missingKey error in development, and a barrier to deployment in production), insert it as a parameter `?key=YOUR_API_KEY` in the `public/index.html` file.
+If you would like to include your own Google Maps API key (to avoid a missingKey error in development, and a fatal error when trying to deploy in production), insert it as a parameter `?key=YOUR_API_KEY` in the `public/index.html` file.
 
 ## Contributing
 
