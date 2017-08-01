@@ -21,6 +21,9 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <div id='logo'>
+            <a href='https://voluntellme.herokuapp.com/'><img src='/jalapeno_burger.jpg' alt='jalapeno burger' width='70px'></img></a>
+          </div>
           <h1 id="title">VolunTellMe</h1>
           <ul id="navigation-bar">
             <li><Link to='/'>Info</Link></li>

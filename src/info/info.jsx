@@ -14,12 +14,12 @@ const Info = () => (
       <div className='what-info'>
         <h2>What sorts of things can you do?</h2>
         <ul>
-          <li>Pets</li>
-          <li>Homeless</li>
-          <li>Elderly</li>
-          <li>Social Issues</li>
-          <li>Education</li>
-          <li>Health</li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+pets&t=hu&ia=web'>Pets</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+homeless&t=hu&ia=web'>Homeless</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+elderly&t=hu&ia=web'>Elderly</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+social+issues&t=hu&ia=web'>Social Issues</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+education&t=hu&ia=web'>Education</a></li>
+          <li><a href='https://duckduckgo.com/?q=volunteering+for+health&t=hu&ia=web'>Health</a></li>
         </ul>
       </div>
       <div className='why-info'>
