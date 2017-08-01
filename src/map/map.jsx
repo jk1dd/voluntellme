@@ -14,7 +14,7 @@ class Map extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/api/v1/organizations').then((result) => {
+    axios.get('https://voluntellme-api.herokuapp.com/api/v1/organizations').then((result) => {
       this.setState({ organizations: result.data });
     });
   }

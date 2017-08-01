@@ -1,3 +1,50 @@
+![Logo of the project](https://c3.staticflickr.com/3/2804/4328074809_0612af691b_o.jpg)
+
+# VolunTellMe
+
+The VolunTellMe app allows visitors to see the volunteer work happening around them, and be inspired. By providing a way to view the many, many places where fellow citizens are working in service, this app is aimed at increasing the drive of everyone to make this a better place to live.
+
+For the best experience, see the [live application on Heroku](www.google.com).
+
+On the "Information" tab, users can see resources and information about getting involved.
+
+On the "Opportunities" tab, a user can search, filter, and sort the table to see nearby (or interesting) organizations that have received grant funding from the government.
+
+On the "Map" tab, the user can see a visual representation of locations where the service takes place. Each InfoWindow contains a link to a Google search using the organization's name.
+
+This is the front-end, built in React and consuming a Rails API. The Rails API serves up a static CSV of the location of sites where AmeriCorps members and Senior Corps volunteers served between 2/10/2016 and 2/10/2017. See the wonderful [report](https://data.nationalservice.gov/Grants-and-Grantees/CNCS-State-Profiles-2016-2017-National-Map-of-Prog/wy3d-x64g) for much more information and context.
+
+Feel free to take a look at the source of the API [here](https://github.com/jk1dd/voluntellme_api), or check out the [live API application](https://voluntellme-api.herokuapp.com/api/v1/organizations), which serves up JSON.
+
+## Installing / Getting started
+
+```
+git clone https://github.com/jk1dd/voluntellme.git
+cd voluntellme
+npm install
+npm start
+```
+Navigate to `localhost:3000` and you should see the magic.
+
+If you would like to include your own Google Maps API key, insert it as a parameter `?key=YOUR_API_KEY` in the `public/index.html` file.
+
+## Contributing
+
+If you'd like to contribute, please fork the repository and use a feature
+branch. Pull requests and feedback are warmly welcome.
+
+## Additional information
+
+- This project was managed with Pivotal Tracker.
+- This is my first React project, and the first time I have used the Google Maps API. I also had the chance to use React Router and React Google Maps, and test with Jest and Enzyme.
+- I have made an attempt to focus on accessibility in structure and design.
+
+## Licensing
+
+The code in this project is licensed under MIT license.
+
+
+<!--
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -1760,7 +1807,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -2135,4 +2182,4 @@ This will only work for locales that have been explicitly imported before.
 
 ## Something Missing?
 
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md) -->
