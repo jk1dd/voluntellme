@@ -57,6 +57,19 @@ li a:hover {
   float:none;
 }
 
+/* info styling */
+.who-info p {
+  width: 60%;
+}
+
+.why-info p {
+  width: 60%;
+}
+
+.when-info p {
+  width: 60%;
+}
+
 /* table styling */
 
 #org-table {
